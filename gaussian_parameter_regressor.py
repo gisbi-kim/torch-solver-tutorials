@@ -33,7 +33,7 @@ class NDParameterEstimator(nn.Module):
         )
 
     def forward(self, points: torch.Tensor):
-        points, _ = torch.sort(points)
+        points, _ = torch.sort(points) # this domain knowledge could boost the regression accuracy almost for free
         pred = self.model(points)
         return pred
 
