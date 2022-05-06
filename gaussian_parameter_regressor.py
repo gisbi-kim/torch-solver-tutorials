@@ -97,3 +97,38 @@ def main():
 if __name__ == "__main__":
     print(f"tuto1 started")
     main()
+    
+    """
+    expected results after all iterations done
+    
+        data class is 0
+         gt     : mu 5.00, std 7.00
+         sampled: mu 4.91, std 6.81
+         pred   : mu 4.84, std 6.71
+         loss: 0.456
+
+        data class is 1
+         gt     : mu -5.00, std 15.00
+         sampled: mu -5.24, std 15.07
+         pred   : mu -5.20, std 14.91
+         loss: 0.289
+
+        data class is 2
+         gt     : mu 2.00, std 3.30
+         sampled: mu 2.03, std 3.38
+         pred   : mu 2.04, std 3.37
+         loss: 0.101
+
+        data class is 3
+         gt     : mu 0.00, std 0.50
+         sampled: mu -0.02, std 0.51
+         pred   : mu -0.07, std 0.51
+         loss: 0.080
+
+        data class is 4
+         gt     : mu 10.00, std 5.00
+         sampled: mu 9.84, std 4.85
+         pred   : mu 9.71, std 4.84
+         loss: 0.450
+    
+    """
